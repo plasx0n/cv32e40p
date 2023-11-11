@@ -71,8 +71,8 @@ module cv32e40p_tb_subsystem #(
 
   // instantiate the core
   cv32e40p_top #(
-      .PULP_XPULP      (PULP_XPULP),
-      .PULP_CLUSTER    (PULP_CLUSTER),
+      .COREV_PULP      (PULP_XPULP),
+      .COREV_CLUSTER    (PULP_CLUSTER),
       .FPU             (FPU),
       .FPU_ADDMUL_LAT  (FPU_ADDMUL_LAT),
       .FPU_OTHERS_LAT  (FPU_OTHERS_LAT),

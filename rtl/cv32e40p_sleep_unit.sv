@@ -152,10 +152,10 @@ module cv32e40p_sleep_unit #(
 
   // Main clock gate of CV32E40P
   cv32e40p_clock_gate core_clock_gate_i (
-      .clk_i       (clk_ungated_i),
-      .en_i        (clock_en),
-      .scan_cg_en_i(scan_cg_en_i),
-      .clk_o       (clk_gated_o)
+      .clk_i        (clk_ungated_i),
+      .en_i         (clock_en),
+      .test_en_i    (scan_cg_en_i),
+      .clk_o        (clk_gated_o)
   );
 
   //----------------------------------------------------------------------------
